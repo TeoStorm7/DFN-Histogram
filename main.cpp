@@ -1,8 +1,11 @@
 #include <iostream>
+<<<<<<< HEAD
 
 int main()
 {
     hist histogram(10, 0.0, 10.0);
+=======
+>>>>>>> c160514dcbbb473932f87bb9a3fd87f02ed123cb
 
     histogram.setBinContent(3, 8.0);
 
