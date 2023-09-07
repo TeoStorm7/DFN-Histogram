@@ -18,9 +18,15 @@ public:
     };
 
     void fill(double x) // fills the histogram
+    {
+        for (uint32_t bin = 0; bin < nBins; bin++)
         {
-
-        };
+            if (x >= xMin && x <= xMax)
+            {
+                // de rezolvat
+            }
+        }
+    };
 
     void setBinContent(uint32_t bin, double content) // sets the bin content
     {
