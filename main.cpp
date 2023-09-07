@@ -1,3 +1,4 @@
+#include <iostream>
 
 int main() {
     hist histogram(10, 0.0, 10.0); 
