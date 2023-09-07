@@ -36,7 +36,7 @@ public:
         {
             return histData[bin];
         }
-    };
+    }
 
     uint32_t getIntegral() // returns the integral
     {
