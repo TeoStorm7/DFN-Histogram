@@ -23,7 +23,12 @@ public:
         {
             if (x >= xMin && x <= xMax)
             {
-                // de rezolvat
+              
+            // Calculate the bin index based on the value of x
+            uint32_t binIndex = (x - xMin) / (xMax - xMin) * nBins;
+                
+            // Set the bin content
+            setBinContent(binIndex, getBinContent(binIndex) + 1);        
             }
         }
     };
