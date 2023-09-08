@@ -28,7 +28,6 @@ public:
                 double binContent = getBinContent(bin);
                 double fillValue = binContent * (bin + 1 - x);
                 setBinContent(bin, fillValue);
-            
             }
         }
     };
