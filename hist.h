@@ -24,11 +24,11 @@ public:
             if (x >= xMin && x <= xMax)
             {
               
-            // Calculate the bin index based on the value of x
-            uint32_t binIndex = (x - xMin) / (xMax - xMin) * bin ;
-                
-            // Set the bin content
-            setBinContent(binIndex, getBinContent(binIndex) + 1);        
+            // Fill the area between bin and bin+1 as X and bin content as Y
+                double binContent = getBinContent(bin);
+                double fillValue = binContent * (bin + 1 - x);
+                setBinContent(bin, fillValue);
+            
             }
         }
     };
